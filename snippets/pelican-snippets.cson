@@ -1,0 +1,4 @@
+'.source.gfm':
+  'Pelican Summary':
+    'prefix': 'pel-sum'
+    'body': '<!-- PELICAN_BEGIN_SUMMARY -->\n\n<!-- PELICAN END SUMMARY -->'

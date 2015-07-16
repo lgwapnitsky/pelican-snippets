@@ -9,8 +9,3 @@
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
   'ctrl-alt-p': 'pelican-snippets:toggle'
-
-'.source.gfm':
-  'Pelican Summary':
-    'prefix': 'pel-sum'
-    'body': '<!-- PELICAN_BEGIN_SUMMARY -->\n\n<!-- PELICAN END SUMMARY -->'
