@@ -1,31 +1,31 @@
-PelicanShortcutsView = require './pelican-shortcuts-view'
+PelicanSnippetsView = require './pelican-snippets-view'
 {CompositeDisposable} = require 'atom'
 
-module.exports = PelicanShortcuts =
-  pelicanShortcutsView: null
+module.exports = PelicanSnippets =
+  pelicanSnippetsView: null
   modalPanel: null
   subscriptions: null
 
   activate: (state) ->
-    @pelicanShortcutsView = new PelicanShortcutsView(state.pelicanShortcutsViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @pelicanShortcutsView.getElement(), visible: false)
+    @pelicanSnippetsView = new PelicanSnippetsView(state.pelicanSnippetsViewState)
+    @modalPanel = atom.workspace.addModalPanel(item: @pelicanSnippetsView.getElement(), visible: false)
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'pelican-shortcuts:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'pelican-snippets:toggle': => @toggle()
 
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
-    @pelicanShortcutsView.destroy()
+    @pelicanSnippetsView.destroy()
 
   serialize: ->
-    pelicanShortcutsViewState: @pelicanShortcutsView.serialize()
+    pelicanSnippetsViewState: @pelicanSnippetsView.serialize()
 
   toggle: ->
-    console.log 'PelicanShortcuts was toggled!'
+    console.log 'PelicanSnippets was toggled!'
 
     if @modalPanel.isVisible()
       @modalPanel.hide()

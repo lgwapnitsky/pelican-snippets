@@ -1,13 +1,13 @@
 module.exports =
-class PelicanShortcutsView
+class PelicanSnippetsView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('pelican-shortcuts')
+    @element.classList.add('pelican-snippets')
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "The PelicanShortcuts package is Alive! It's ALIVE!"
+    message.textContent = "The PelicanSnippets package is Alive! It's ALIVE!"
     message.classList.add('message')
     @element.appendChild(message)
 

@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle pelican-shortcuts'
-      'command': 'pelican-shortcuts:toggle'
+      'label': 'Toggle pelican-snippets'
+      'command': 'pelican-snippets:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'pelican-shortcuts'
+      'label': 'pelican-snippets'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'pelican-shortcuts:toggle'
+          'command': 'pelican-snippets:toggle'
         }
       ]
     ]

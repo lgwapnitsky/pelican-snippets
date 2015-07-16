@@ -1,14 +1,14 @@
 {
-  "name": "pelican-shortcuts",
-  "main": "./lib/pelican-shortcuts",
+  "name": "pelican-snippets",
+  "main": "./lib/pelican-snippets",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "pelican-shortcuts:toggle"
+    "atom-workspace": "pelican-snippets:toggle"
   },
-  "repository": "https://github.com/atom/pelican-shortcuts",
+  "repository": "https://github.com/atom/pelican-snippetss",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

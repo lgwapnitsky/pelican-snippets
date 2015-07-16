@@ -1,5 +1,5 @@
-PelicanShortcutsView = require '../lib/pelican-shortcuts-view'
+PelicanSnippetsView = require '../lib/pelican-snippets-view'
 
-#describe "PelicanShortcutsView", ->
+#describe "PelicanSnippetsView", ->
 #  it "has one valid test", ->
 #    expect("life").toBe "easy"
